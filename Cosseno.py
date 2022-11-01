@@ -10,12 +10,6 @@ def angulo_cosseno(x,y,z):
 	angulo3 = math.acos(cosseno)
 	st.write("O ângulo é(Em graus): ", angulo2)
 	st.write("O ângulo é(Em Radianos): ", angulo3)
-
-def angulo_seno(A, B, C):
-	seno = (A * math.sin(B))/math.sin(C)
-	seno2 = np.degrees(math.asin(seno))
-	st.write("O ângulo é(Em graus): ", seno2)
-	
 	
 #Aparencia do Site
 st.title("Cosseno")
@@ -29,13 +23,3 @@ c = st.number_input("Lado 3: ")
 if st.button("Calcular Cosseno"):
 	angulo_cosseno(a, b, c)
 	st.success("Achou o ângulo! Parabéns!")
-
-st.title("Seno")
-st.info("Esse é um aplicativo que calcula o ângulo do seno.")
-
-d = st.number_input("Lado A: ")
-e = st.number_input("Ângulo b: ")
-f = st.number_input("Ângulo a: ")
-
-if st.button("Calcular Seno"):
-	angulo_seno(d, e, f)
